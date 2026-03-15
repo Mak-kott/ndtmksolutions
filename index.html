@@ -602,8 +602,15 @@ margin-left:auto;
     </section>
   </main>
 
-  <script>
-    document.getElementById('year').textContent = new Date().getFullYear();
-  </script>
+ <script>
+document.getElementById('year').textContent = new Date().getFullYear();
+
+window.addEventListener("load", function() {
+window.scrollTo(0,0);
+if (window.location.hash) {
+history.replaceState(null, null, window.location.pathname);
+}
+});
+</script>
 </body>
 </html>
