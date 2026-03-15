@@ -119,7 +119,28 @@ border:1px solid rgba(111,211,255,0.2);
       background:linear-gradient(135deg, rgba(94,234,212,.18), rgba(96,165,250,.18));
       border-color:rgba(94,234,212,.25)
     }
+.contact-actions{
+display:flex;
+flex-direction:column;
+gap:12px;
+align-items:flex-start;
+}
 
+.contact-actions a{
+display:inline-flex;
+width:auto;
+max-width:max-content;
+position:relative;
+z-index:2;
+}
+
+.contact-box{
+position:relative;
+}
+
+.contact-box::before{
+content:none;
+}
     .hero{
   padding:68px 0 26px;
   background:
@@ -594,21 +615,24 @@ border:1px solid rgba(111,211,255,0.2);
 
         <div class="contact-wrap">
           <div class="card contact-box">
-            <h4>NDT@MK Solutions</h4>
-            <p>
-              <strong style="color:#fff">Maciej Kołek</strong><br />
-              NDT Inspection Specialist<br />
-              • Available across Belgium and the Netherlends
-            </p>
-            <div class="accent-line"></div>
-            <a class="btn btn-primary inline" href="mailto:ndt.mksolutions@gmail.com?subject=Inquiry%20NDT@MK%20Solutions">
-Email
-</a>
+  <h4>NDT@MK Solutions</h4>
+  <p>
+    <strong style="color:#fff">Maciej Kołek</strong><br />
+    NDT Inspection Specialist<br />
+    • Available across Belgium and the Netherlands
+  </p>
 
-<a class="btn inline" href="https://www.linkedin.com/in/TWOJPROFIL" target="_blank" rel="noopener">
-LinkedIn profile
-</a>
-          </div>
+  <div class="accent-line"></div>
+
+  <div class="contact-actions">
+    <a class="btn btn-primary inline" href="mailto:ndt.mksolutions@gmail.com?subject=Inquiry%20NDT@MK%20Solutions">
+      Email
+    </a>
+
+    <a class="btn inline linkedin-btn" href="https://www.linkedin.com/in/TWOJPROFIL" target="_blank" rel="noopener">
+      LinkedIn profile
+    </a>
+  </div>
 
           <div class="card">
             <h4>What clients usually send</h4>
